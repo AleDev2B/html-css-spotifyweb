@@ -11,14 +11,18 @@
     <script src="https://kit.fontawesome.com/d0025431f9.js" crossorigin="anonymous"></script>
       <!-- MIO STYLESHEET CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Spotify User Page UI</title>
+    <title>Spotify Alex Page</title>
   </head>
   <body>
-    <div class="wrapper">
 
+    <div class="wrapper">
+<!-- barra di sx con logo spotify e menu a cascata -->
       <ul class="nav flex-column">
         <li class="nav-item">
-          <a class="nav-link active" href="#"> <i class="fab fa-spotify fa-3x"></i> <h3> Spotify</h3></a>
+          <a class="nav-link active" href="#">
+            <i class="fab fa-spotify fa-3x"></i>
+            <h3> Spotify</h3>
+          </a>
         </li>
         <li class="nav-item">
             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">MAIN</a>
@@ -85,8 +89,10 @@
             <a href="#"> <i class="fas fa-plus-circle"></i> NEW PLAYLIST</a>
           </div>
       </ul>
-
+<!-- corpo centrale pagina -->
       <div class="main-content">
+
+        <!-- barra fissa alta con bottone trasparente effettua upgrade  -->
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
           <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -109,9 +115,11 @@
             </ul>
           </div>
         </nav>
-        <div id="covers" class="container">
-          <div class="row">
-            <div class="col-xs-12">
+
+        <!-- Corpo centrale pagina con playlist e immagini Album  -->
+
+        <div id="covers" class="container-fluid">
+
               <ul class="list-group list-group-horizontal list-group-flush">
                 <li class="list-group-item">IN EVIDENZA</li>
                 <li class="list-group-item">PODCAST</li>
@@ -120,84 +128,84 @@
                 <li class="list-group-item">NUOVE USCITE</li>
                 <li class="list-group-item">SCOPRI</li>
               </ul>
-            </div>
-            <div class="col-xs-12">
-              <h5>Recently played</h5>
-            </div>
+
+              <h4 class="titoli-playlist">Recently played</h4>
+
             <div class="labels-photo">
-              <ul class="list-group list-group-horizontal list-group-flush">
-                <li class="list-group-item"> <img src="img/J7Dr-metal_lifting.jpg" alt=""> <h6>Heavy Metal</h6> Subtitle </li>
-                <li class="list-group-item"> <img src="img/yBBf-stranger.jpeg" alt=""> <h6>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h6>  Subtitle</li>
-                <li class="list-group-item"> <img src="img/zt3C-aquietplace.jpeg" alt=""> <h6>A quiet place</h6> Subtitle</li>
-                <li class="list-group-item"> <img src="img/Yv33-split.jpeg" alt=""> <h6>Split</h6> Subtitle</li>
-                <li class="list-group-item"> <img src="img/wlxl-cure.jpeg" alt=""> <h6>A cure for wellness</h6> Subtitle</li>
-                <li class="list-group-item"> <img src="img/ktY1-sinister.jpeg" alt=""> <h6>Sinister</h6> Subtitle</li>
+              <ul class="list-group list-group-horizontal">
+                <li class="list-group-item"> <img class="photo-album"src="img/J7Dr-metal_lifting.jpg" alt=""> <h6>Heavy Metal</h6> Subtitle </li>
+                <li class="list-group-item"> <img class="photo-album"src="img/yBBf-stranger.jpeg" alt=""> <h6>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h6>  Subtitle</li>
+                <li class="list-group-item"> <img class="photo-album"src="img/zt3C-aquietplace.jpeg" alt=""> <h6>A quiet place</h6> Subtitle</li>
+                <li class="list-group-item"> <img class="photo-album"src="img/Yv33-split.jpeg" alt=""> <h6>Split</h6> Subtitle</li>
+                <li class="list-group-item"> <img class="photo-album"src="img/wlxl-cure.jpeg" alt=""> <h6>A cure for wellness</h6> Subtitle</li>
+                <li class="list-group-item"> <img class="photo-album"src="img/ktY1-sinister.jpeg" alt=""> <h6>Sinister</h6> Subtitle</li>
               </ul>
             </div>
-            <div class="col-xs-12">
-              <h5>Creato per John Doe</h5>
-              <p>Più ascolti, più accurati saranno i suggerimenti.</p>
-            </div>
+
+              <h4 class="titoli-playlist">Creato per John Doe</h4>
+              <p class="p-playlist">Più ascolti, più accurati saranno i suggerimenti.</p>
+
             <div class="labels-photo">
               <ul class="list-group list-group-horizontal list-group-flush">
-                <li class="list-group-item"> <img src="img/Jkjk-radar.jpeg" alt=""> <h6>Release Radar</h6> </li>
-                <li class="list-group-item"> <img src="img/pdY7-mixdaily.jpeg" alt=""> <h6>Daily Mix 1</h6> </li>
+                <li class="list-group-item"> <img class="photo-album"src="img/Jkjk-radar.jpeg" alt=""> <h6>Release Radar</h6> </li>
+                <li class="list-group-item"> <img class="photo-album"src="img/pdY7-mixdaily.jpeg" alt=""> <h6>Daily Mix 1</h6> </li>
               </ul>
             </div>
-            <div class="col-xs-12">
-              <h5>Artisti più popolari</h5>
-              <p>Più ascolti, più accurati saranno i suggerimenti.</p>
-            </div>
+
+              <h4 class="titoli-playlist">Artisti più popolari</h4>
+              <p class="p-playlist">Più ascolti, più accurati saranno i suggerimenti.</p>
+
             <div class="labels-photo">
               <ul class="list-group list-group-horizontal list-group-flush">
-                <li class="list-group-item"> <img src="img/eOl1-youg.jpeg" alt=""> <h6>Lana del Rey</h6> </li>
-                <li class="list-group-item"> <img src="img/7K_e-einaudi.jpeg" alt=""> <h6>Ludovico Einaudi</h6> </li>
+                <li class="list-group-item"> <img class="photo-album"src="img/eOl1-youg.jpeg" alt=""> <h6>Lana del Rey</h6> </li>
+                <li class="list-group-item"> <img class="photo-album"src="img/7K_e-einaudi.jpeg" alt=""> <h6>Ludovico Einaudi</h6> </li>
               </ul>
             </div>
-          </div>
+
         </div>
       </div>
-<!-- inizio player audio -->
-    <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
-      <div class="album-img">
-        <a href="#"> <img id="albumtizio"src="img/cputhalbum.jpg" alt=""> </a>
-        <div class="album-info">
-          <h6><a href="#">Some Type of Love</a></h6>
-          <h6><a href="#">Charlie Puth</a></h6>
-          <i class="far fa-heart"></i>
-          <i class="far fa-folder"></i>
-        </div>
-      </div>
-
-      <div class="barra centrale">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <i class="fas fa-random"></i>
-          </li>
-          <li class="nav-item">
-            <i class="fas fa-step-backward"></i>
-          </li>
-          <li class="nav-item">
-            <i class="far fa-play-circle"></i>
-          </li>
-          <li class="nav-item">
-            <i class="fas fa-step-forward"></i>
-          </li>
-          <li class="nav-item">
-            <i class="fas fa-redo-alt"></i>
-          </li>
-          <li class="nav-item">
-            <i class="fas fa-step-forward"></i>
-          </li>
-        </ul>
-
-      </div>
-
-<!-- fine player audio -->
-    </nav>
 
 <!-- wrapper end -->
     </div>
+
+    <!-- inizio player audio -->
+        <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+          <div class="album-img">
+            <a href="#"> <img id="albumtizio"src="img/cputhalbum.jpg" alt=""> </a>
+            <div class="album-info">
+              <h6><a href="#">Some Type of Love</a></h6>
+              <h6><a href="#">Charlie Puth</a></h6>
+              <i class="far fa-heart"></i>
+              <i class="far fa-folder"></i>
+            </div>
+          </div>
+
+          <div class="barra centrale">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <i class="fas fa-random"></i>
+              </li>
+              <li class="nav-item">
+                <i class="fas fa-step-backward"></i>
+              </li>
+              <li class="nav-item">
+                <i class="far fa-play-circle"></i>
+              </li>
+              <li class="nav-item">
+                <i class="fas fa-step-forward"></i>
+              </li>
+              <li class="nav-item">
+                <i class="fas fa-redo-alt"></i>
+              </li>
+              <li class="nav-item">
+                <i class="fas fa-step-forward"></i>
+              </li>
+            </ul>
+
+          </div>
+
+    <!-- fine player audio -->
+        </nav>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
