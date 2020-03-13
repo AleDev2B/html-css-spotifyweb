@@ -1,6 +1,6 @@
 *{
   box-sizing: border-box;
-  
+  border: 1px solid grey;
   background-color: #000000;
 }
 
@@ -14,13 +14,14 @@ body {
   height: 85vh;
   overflow: scroll;
 }
-
-h3,h4,h6,i{
+/* proprietà generali dei selettori */
+h3,h4,h6,i,p,div{
   color: white;
 }
 
 i{
   padding-right: 10px;
+  display: inline-block;
 }
 
 p{
@@ -34,14 +35,25 @@ a{
   color: rgba(127, 127, 127, 0.4);
 }
 
+.navbar {
+  width: 100%;
+  height: 90px;
+}
+
 /* proprietà barra di sinistra */
+.nav-link {
+  display: inline-flex;
+  height: 90px;
+}
+
 .nav {
   min-width: 16%;
   max-width: 16%;
   color: #aaaaaa;
   transition: all 0.3s;
   padding-left: 17px;
-border-left: 3px solid transparent;
+  border-left: 3px solid transparent;
+  background-color: #0B0E14;;
 }
 /* proprietà corpo centrale pagina */
 .main-content{
@@ -51,25 +63,44 @@ border-left: 3px solid transparent;
   flex-wrap: wrap;
 }
 /* proprietà barra alta */
-.navbar {
-  color: #aaaaaa;
-  width: 100%;
-  height: 15vh;
+
+.call-to-action {
+  position: fixed;
+  z-index: 1;
+  width: calc(100% - 230px);
+  background-color: #0B0E14;
+  text-align: right;
+  }
+
+a.btn{
+    display: inline-block;
+    margin-right: 40px;
+    padding: 10px 40px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    text-transform: uppercase;
 }
+
 /* propretà parte alta del corpo centrale */
-#covers{
-margin: 0 auto;
+#covers,ul,.titoli-pagina{
 background: #131822;
+list-style-type: none;
 }
+.list-group {
+  margin: 0 auto;
+  }
 
 /* prop. contenitore con foto playlist & album */
 
 .list-group-item{
   width: calc(100% / 6);
-  display: flex;
   justify-content: center;
   flex-flow: wrap;
-  background-color: transparent;
+  background: #131822;
+  align-items: center;
 }
 
 .photo-album{
@@ -84,7 +115,30 @@ background: #131822;
 }
 
 .album-img{
-  display: flex;
-  align-items: stretch;
-  overflow: scroll;
+  min-width: 16%;
+  height: 80px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.player-controller .player-controller-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.player-controller .player-controller-time .player-controller-time-min {
+  width: 10%;
+    margin: 0 10px;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .player-bar {
+    width: 200px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
 }
